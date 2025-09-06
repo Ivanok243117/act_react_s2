@@ -1,0 +1,78 @@
+.tarjeta {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.tarjeta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.titulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.categoria {
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.descripcion {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Variantes con colores más vibrantes */
+.tarjetaPrimaria {
+  border-left: 4px solid #3498db;
+  background: linear-gradient(135deg, #77c4ea 0%, #f0f8ff 100%);
+}
+
+.tarjetaPrimaria .categoria {
+  background-color: #3498db20;
+  color: #3498db;
+  border: 1px solid #3498db30;
+}
+
+.tarjetaSecundaria {
+  border-left: 4px solid #95a5a6;
+  background: linear-gradient(135deg, #7f8e90 0%, #f8f9fa 100%);
+}
+
+.tarjetaSecundaria .categoria {
+  background-color: #95a5a620;
+  color: #95a5a6;
+  border: 1px solid #95a5a630;
+}
+
+.tarjetaExito {
+  border-left: 4px solid #2ecc71;
+  background: linear-gradient(135deg, #65ba73 0%, #f0fff4 100%);
+}
+
+.tarjetaExito .categoria {
+  background-color: #2ecc7120;
+  color: #2ecc71;
+  border: 1px solid #2ecc7130;
+}
